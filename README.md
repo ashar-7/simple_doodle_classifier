@@ -1,6 +1,6 @@
 # doodle_classifier
 
-NOTE 1: Visit https://quickdraw.withgoogle.com to know more about quickdraw (and please don't compare my classifier with theirs XD).
+NOTE 1: Visit https://quickdraw.withgoogle.com to know more about quickdraw (and please don't compare my classifier with theirs).
 
 NOTE 2: You may find it confusing if you're not familiar with deep learning or neural networks.
 
