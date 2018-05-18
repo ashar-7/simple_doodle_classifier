@@ -13,7 +13,8 @@ NOTE 5: You have to delete the 'doodle_classifier.h5' file in model/ folder and 
 NOTE 6: If you don't get enough accuracy, try increasing the number of epochs or the total number of training data.
 
 This is a simple doodle classifier written in python which recognizes your doodles (drawings).
-For simplicity's sake, there are only 5 datasets -- Apple, Cat, Computer, Eye, Headphones
+For simplicity's sake, there are only 5 datasets -- Apple, Cat, Computer, Eye, Headphones.
+
 But you can easily download the datasets (in the form of numpy bitmaps, .npy files) for other categories and 
 then train the model again.
 
@@ -36,34 +37,34 @@ Modules required :
 
 Some parameters :
     
-    path        - path of the directory in which the datasets are present
+    path                - path of the directory in which the datasets are present
     
-    filenames   - names of the dataset files
+    filenames           - names of the dataset files
     
-    label_map   - dictionary to map integer labels with their respective string labels
+    label_map           - dictionary to map integer labels with their respective string labels
     
-    train_features - final features to train the model on
+    train_features      - final features to train the model on
     
-    train_labels   - final labels for training data
+    train_labels        - final labels for training data
     
-    test_features - final features for evaluation of the model
+    test_features       - final features for evaluation of the model
     
-    test_labels - final labels for test data
+    test_labels         - final labels for test data
     
-    slice_train - number of 
+    slice_train         - number of 
     
-    MODEL_PATH - path where the model will be saved
+    MODEL_PATH          - path where the model will be saved
     
-    n_classes - number of classes (or categories) of the doodles. This will be automatically assigned as you put new datasets
+    n_classes           - number of classes (or categories) of the doodles. This will be automatically assigned as you put new datasets
     
-    width, height - width and height of the final images for training, testing and prediction
+    width, height       - width and height of the final images for training, testing and prediction
     
-    depth - number of channels in the images, here the images are grayscale, so depth is 1
+    depth               - number of channels in the images, here the images are grayscale, so depth is 1
     
-    K.image_data_format     - this is the format of the input data for the model. There are two formats, 'channels_first' and 'channels_last'.
-                              The input data will be shaped according to these formats.
-                              'channels_first' corresponds to (num_samples, depth, width, height)
-                              'channels_last' corresponds to (num_samples, width, height, depth)
+    K.image_data_format - this is the format of the input data for the model. There are two formats, 'channels_first' and 'channels_last'.
+                          The input data will be shaped according to these formats.
+                          'channels_first' corresponds to (num_samples, depth, width, height)
+                          'channels_last' corresponds to (num_samples, width, height, depth)
 
 The program will try to load the model, if it doesn't exist, a new model will be created and trained.
 
