@@ -19,6 +19,7 @@ But you can easily download the datasets (in the form of numpy bitmaps, .npy fil
 then train the model again.
 
 To download the datasets for other categories, visit https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/numpy_bitmap?pli=1
+
 Put the downloaded datasets in quickdraw_data/numpy_bitmap/ folder.
 
 To train the model from scratch, just delete the .h5 model file in the model folder.
