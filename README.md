@@ -12,7 +12,7 @@ NOTE 5: You have to delete the 'doodle_classifier.h5' file in model folder and t
 
 NOTE 6: If you don't get enough accuracy, try increasing the number of epochs or the total number of training data.
 
-<h1> Data </h2>
+<h2> Data </h2>
 
 This is a simple doodle classifier written in python which recognizes your doodles (drawings).
 For simplicity's sake, there are only 5 datasets -- Apple, Cat, Computer, Eye, Headphones.
