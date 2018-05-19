@@ -6,11 +6,13 @@ NOTE 2: You may find it confusing if you're not familiar with deep learning or n
 
 NOTE 3: There are only 5 dataset files to keep the size small because they are approximately 90 mb each. 
 
-NOTE 4: Extract the zip files in the quickdraw_data/numpy_bitmap/ folder (and not in a subfolder) before running the program.
+NOTE 4: Extract the zip files in the quickdraw_data/numpy_bitmap folder (and not in a subfolder) before running the program.
 
-NOTE 5: You have to delete the 'doodle_classifier.h5' file in model/ folder and train the model again everytime you increase or decrease the number of datasets.
+NOTE 5: You have to delete the 'doodle_classifier.h5' file in model folder and train the model again everytime you increase or decrease the number of datasets.
 
 NOTE 6: If you don't get enough accuracy, try increasing the number of epochs or the total number of training data.
+
+<h1> Data </h2>
 
 This is a simple doodle classifier written in python which recognizes your doodles (drawings).
 For simplicity's sake, there are only 5 datasets -- Apple, Cat, Computer, Eye, Headphones.
@@ -20,11 +22,9 @@ then train the model again.
 
 To download the datasets for other categories, visit https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/numpy_bitmap?pli=1
 
-Put the downloaded datasets in quickdraw_data/numpy_bitmap/ folder.
+Put the downloaded datasets in quickdraw_data/numpy_bitmap folder in .npy file format.
 
-To train the model from scratch, just delete the .h5 model file in the model folder.
-
-Modules required :
+<h3> Modules required : </h3>
 
     os              - for getting filenames of the datasets
     
@@ -36,7 +36,7 @@ Modules required :
     
     sklearn         - for splitting the training and testing data and encoding the labels
 
-Some parameters :
+<h3> Some parameters : </h3>
     
     path                - path of the directory in which the datasets are present
     
@@ -67,9 +67,14 @@ Some parameters :
                           'channels_first' corresponds to (num_samples, depth, width, height)
                           'channels_last' corresponds to (num_samples, width, height, depth)
 
+<h2> Model </h2>
+
 The program will try to load the model, if it doesn't exist, a new model will be created and trained.
 
-There are 2 windows, one for drawing and another for displaying the prediction made on that drawing.
-The cv2 module is responsible for the drawing and displaying of the images.
+To train the model from scratch, just delete the .h5 model file in the model folder.
 
-A jupyter notebook is also provided.
+<h2> OpenCV </h2>
+
+There are 2 windows, one for drawing and another for displaying the prediction made on that drawing.
+The cv2 (OpenCV) module is responsible for the drawing and displaying of the images.
+
